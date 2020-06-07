@@ -5,6 +5,7 @@ import Box from '@material-ui/core/Box';
 import Families from './Families';
 import FamilyTable from './FamilyTable';
 import CreateFamily from './CreateFamily';
+import FamilyTree from './Tree';
 import {
   BrowserRouter as Router,
   Switch,
@@ -31,6 +32,9 @@ export default function App() {
           </Route>
             <Route path="/table">
               <FamilyTable />
+            </Route>
+            <Route path="/family-tree">
+              <FamilyTree />
             </Route>
             <Route path="/">
               <Families />
